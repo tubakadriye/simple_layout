@@ -13,19 +13,22 @@ body {
    
 }
 
+/* use display:flex for layout and positioning */
+/* flex container */
 main {
    
     /* padding: 2em 0.5em; */
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     font-size: 250%;
-    justify-content: center;
+    justify-content: space-evenly;
     margin:1em 0;    
     text-align: center;
     /* align-content: space-between; */
-    /* align-items: center; */
+    align-items: flex-start;
     /* flex-direction: column; */
-    gap: 2em;
+    /* gap: 2em; */
     
 
 }
@@ -44,22 +47,23 @@ strong {
 
 section {
   
-    max-width: 250px;
-    display: flex;  
-    flex-wrap: wrap; 
+    max-width: 230px;
+    /* display: flex;   */
+    /* flex-wrap: wrap;  */
     /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     /* align-content: space-between; */
     text-align: center;
     flex-grow: 1;
     flex-shrink: 1;
+    margin: 1rem;
 
 }
 
 article {
-    width: 100%;
-    font-size: 0.5em;
+    /* width: 100%; */
+    font-size: 1.3rem; /*0.5em;*/
     margin: 0;   
     /* flex-basis: 50%; */
     /* flex-grow: 1; */
@@ -69,8 +73,8 @@ article {
 .black {
     background-color: black;
     /* border: 3px solid red; */
-    min-height: 150px;
-    /* width:100%; */
+    min-height: 8rem;
+    width:100%;
     text-align: center;
     color: white;
     display: flex;
@@ -78,6 +82,7 @@ article {
     justify-content: center;
     font-size: larger;
     font-weight: lighter;
+    min-width: 3rem;
 
     
 }
